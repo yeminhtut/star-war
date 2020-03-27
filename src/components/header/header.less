@@ -1,0 +1,35 @@
+.layout-header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    padding: 0px 20px;
+    border-bottom: 1px solid fade(@primary-color, 10%);
+    background: white;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.7);
+    border-top: 0px solid rgba(65, 65, 65, 1);
+    border-bottom: 0px solid rgba(65, 65, 65, 1);
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+    &__brand {
+        height: 100%;
+    }
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 16px;
+        height: 100%;
+    }
+    &__brand {
+        &-image {
+            max-width: 120px;
+            max-height: 40px;
+            margin-top: 12px;
+        }
+    }
+}
